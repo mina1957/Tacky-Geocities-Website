@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Awesome Geocities-style Page!</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+            color: #FF00FF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            animation: backgroundChange 20s infinite;
+        }
+        @keyframes backgroundChange {
+            0% { background-color: red; }
+            20% { background-color: orange; }
+            40% { background-color: yellow; }
+            60% { background-color: green; }
+            80% { background-color: blue; }
+            100% { background-color: red; }
+        }
+        .main-container {
+            display: flex;
+            width: 95%;
+            max-width: 1400px;
+            justify-content: center;
+        }
+        .container {
+            background-color: rgba(0, 255, 255, 1);
+            border: 5px dashed yellow;
+            margin: 20px;
+            padding: 20px;
+            width: 60%;
+        }
+        .side-container {
+            width: 35%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 48px;
+            text-shadow: 3px 3px #FF0000;
+            animation: rainbow 5s infinite;
+        }
+        img {
+            border-radius: 5px;
+            position: relative;
+        }
+        li {
+            margin: 15px;
+        }
+        .blink {
+            animation: blink 1s infinite;
+            display: block;
+            margin-left: 35%;
+        }
+        .marquee {
+            background-color: #000000;
+            color: #00FF00;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .guestbook {
+            background-color: #FFFFFF;
+            border: 3px solid #000000;
+            padding: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .counter {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: block;
+            margin-left: 30%;
+           
+        }
+        .article {
+            background-color: #FFFF00;
+            border: 3px dotted #0000FF;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .article h2 {
+            color: #FF0000;
+            text-decoration: underline overline;
+        }
+        .article img {
+            float: left;
+            margin-right: 10px;
+        }
+        .footer {
+            width: 100%;
+            height: 300px;
+        }
+        .star-image {
+            z-index: 1000;
+            position: relative;
+            top: 200px;
+            right: 115px;
+            border-radius: 150px;
+        }
+        .star-shape {
+            width: 0;
+            height: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 500px solid #FFA500;
+            position: relative;
+            margin-bottom: 250px;
+        }
+        .star-shape:after {
+            width: 0;
+            height: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-top: 500px solid #FFA500;
+            position: absolute;
+            content: "";
+            top: 150px;
+            left: -250px;
+        }
+        .heart-shape {
+            width: 200px;
+            height: 180px;
+            background-color: #FF69B4;
+            transform: rotate(-45deg);
+            margin-top: 50px;
+            position: relative;
+        }
+        .heart-shape:before,
+        .heart-shape:after {
+            content: "";
+            width: 200px;
+            height: 180px;
+            background-color: #FF69B4;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart-shape:before {
+            top: -100px;
+            left: 0;
+        }
+        .heart-shape:after {
+            top: 0;
+            left: 100px;
+        }
+        .poetry {
+            position: absolute;
+            top: 30%;
+            left: 60%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            text-align: center;
+            width: 80%;
+            font-size: 16px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+            z-index: 1000;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Awesome Page!</h1>
+        <img src="https://media.giphy.com/media/Zx1ZEctOOvxK5VCwwE/giphy.gif?cid=790b7611b2weua20tsdqg52eoequag57x7k4cn10w1d9krfo&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Under Construction" class="center" width="200" height="200">
+        <p class="blink">🚧 This site is under construction! 🚧</p>
+        <marquee class="marquee">Thanks for visiting my cool website! Check out my articles on Harry Potter, Unicorns, and Cookies!</marquee>
+
+        <div class="article">
+            <h2>Harry Potter's Magical World</h2>
+            <img src="https://media.giphy.com/media/10FzkePmCE8aGI/giphy.gif?cid=790b7611a4lhd12rh3gcjetusysqcx32tn799t1xfjzurewi&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Harry Potter" width="100" height="100">
+            <p>Harry Potter is the coolest wizard ever! He goes to Hogwarts School of Witchcraft and Wizardry with his best friends Ron and Hermione. They have amazing adventures and fight against the evil Lord Voldemort. My favorite book is "The Prisoner of Azkaban" because it has time travel and a werewolf teacher! What's your favorite Harry Potter book?</p>
+        </div>
+
+        <div class="article">
+            <h2>Unicorns: Magical Creatures of Wonder</h2>
+            <img src="https://media.giphy.com/media/HULqwwF5tWKznstIEE/giphy.gif?cid=ecf05e47hpdrhatu45hqrpxeiiv1jzw3ev91f7tf02alytpn&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Unicorn" width="100" height="100">
+            <p>Unicorns are the most beautiful and magical creatures in the world! They have shimmering white coats, flowing manes, and a single spiral horn on their forehead. Legend says their horn can purify water and heal wounds. I wish I could ride a unicorn through a rainbow forest! Do you believe in unicorns?</p>
+        </div>
+
+        <div class="article">
+            <h2>Baking the Perfect Chocolate Chip Cookies</h2>
+            <img src="https://media.giphy.com/media/l3nWl5bhBoim7glNu/giphy.gif?cid=ecf05e47aif0i50hd0t5l4838mh3vj33so76k4sumt1jqolv&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cookies" width="100" height="100">
+            <p>Nothing beats the smell of freshly baked cookies! Here's my secret recipe for the best chocolate chip cookies:</p>
+            <ul>
+                <li>2 1/4 cups all-purpose flour</li>
+                <li>1 tsp baking soda</li>
+                <li>1 cup butter, softened</li>
+                <li>3/4 cup sugar</li>
+                <li>3/4 cup brown sugar</li>
+                <li>2 eggs</li>
+                <li>2 tsp vanilla extract</li>
+                <li>2 cups chocolate chips</li>
+            </ul>
+            <p>Mix everything, bake at 375°F for 9-11 minutes, and enjoy with a glass of milk!</p>
+        </div>
+
+        <div class="guestbook">
+            <h2>Guestbook</h2>
+            <form id="guestbookForm">
+                <input type="text" id="name" placeholder="Your name" required>
+                <textarea id="message" placeholder="Your message" required></textarea>
+                <button type="submit">Sign Guestbook</button>
+            </form>
+            <div id="guestbookEntries"></div>
+        </div>
+        <div class="counter">
+            Visitor Count: <span id="visitorCount">0</span>
+        </div>
+        <img src="https://media.giphy.com/media/SbJqd0Qyf2sc8/giphy.gif?cid=ecf05e47zid3edba718ge38j6ej7k6lyp2uu1hx4pwbb6uy6&ep=v1_gifs_search&rid=giphy.gif&ct=g" class="footer">
+    </div>
+
+    <div class="side-container">
+            <div class="star-shape">
+                <img src="https://media.giphy.com/media/xTiN0HL2iq3oHF1852/giphy.gif?cid=790b7611mmcrvabozvme5e44gcvj4hv7gsosx2ungyr0l80q&ep=v1_gifs_search&rid=giphy.gif&ct=g" width=250 class="star-image">
+            </div>
+            <div class="heart-shape">
+                <div class="poetry">
+                    <h3>Love's Embrace</h3>
+                    <p>
+                        In the depths of hearts,<br>
+                        Love blooms like a gentle rose,<br>
+                        Petals of pure joy.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <h3>About Lies</h3>
+                    <p>
+                        “Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love.”
+                        <br>
+                        <br>
+                        <strong>― Fyodor Dostoevsky, The Brothers Karamazov</strong>
+                    </p>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                    <h3>About Memory</h3>
+                    <p>“Many years afterwards, we attempt to solve puzzles that were not mysteries at the time and we try to decipher half-obliterated letters from a language that is too old and whose alphabet we don't even know.”
+                        <br>
+                        <br>
+                        <strong>― Patrick Modiano, So You Don't Get Lost in the Neighborhood</strong>
+                    </p>
+            </div>
+        </div>
+
+    
+
+    <script>
+        // Guestbook functionality
+        const guestbookForm = document.getElementById('guestbookForm');
+        const guestbookEntries = document.getElementById('guestbookEntries');
+
+        guestbookForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const entry = document.createElement('p');
+            entry.innerHTML = `<strong>${name}:</strong> ${message}`;
+            guestbookEntries.appendChild(entry);
+            guestbookForm.reset();
+        });
+
+        // Visitor counter
+        let count = 100;
+        const visitorCount = document.getElementById('visitorCount');
+        function incrementCounter() {
+            count++;
+            visitorCount.textContent = count;
+        }
+        incrementCounter();
+    </script>
+</body>
+</html>
